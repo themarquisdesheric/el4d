@@ -21,15 +21,14 @@ class App extends Component {
             </div>
           </figcaption>
         </figure>
-        
+
         <footer>
-          for booking&nbsp;
+          for booking &nbsp;&middot;&nbsp;
             <a href="tel:818-564-8318">
-              <span role="img" aria-label="cellphone">📱</span> 
               818.564.8318
-            </a>  
+            </a>
+            &nbsp;&middot;&nbsp;
             <a href="mailto:elad@mamnoon.com">
-              <span role="img" aria-label="chat">💬</span> 
               elad@mamnoon.com
             </a>
         </footer>
