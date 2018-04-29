@@ -19,12 +19,14 @@ class NameChanger extends Component {
         return 'Bangers';
       case 2:
         return 'Luckiest Guy';
+      default:
+        return 'Bangers';
     }
   };
 
   changeName = () => {
     const names = ['ol lightsy', 'eladi-da', 'el-40'];
-    const { fontFamily, index } = this.state;
+    const { index } = this.state;
     const { changeFont } = this;
     
     this.setState(prevState => ({
@@ -38,7 +40,7 @@ class NameChanger extends Component {
   };
 
   render() {
-    const { name, fontFamily, index } = this.state;
+    const { name, fontFamily } = this.state;
 
     return (
       <span className="name-changer" style={{ fontFamily }}>

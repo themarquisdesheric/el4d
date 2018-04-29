@@ -8,6 +8,7 @@ body {
   background: linear-gradient(141deg, #050505 0, #1d1c1c 71%, #1f1b1b 100%);
   text-align: center;
   color: whitesmoke;
+  overflow: hidden;
 }
 
 figure {
@@ -17,6 +18,8 @@ figure {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .tilt-child { min-width: 100vw; }
   
   img { width: 80%; }
 }
@@ -44,7 +47,7 @@ h1 {
   .aka { 
     font-size: 1.5rem;
     opacity: 0;
-    animation: showAKA 300ms 750ms ease-out forwards;
+    animation: showAKA 400ms 750ms ease-out forwards;
   }
   
   .name-changer {

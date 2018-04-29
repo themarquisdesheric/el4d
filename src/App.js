@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tilt from './Tilt';
 import NameChanger from './NameChanger';
 import './App.css';
 
@@ -7,7 +8,9 @@ class App extends Component {
     return (
       <div className="app">
         <figure>
-          <img src="el4d.png" alt="el4d music" />
+          <Tilt>
+            <img src="el4d.png" alt="el4d music" />
+          </Tilt>
           <figcaption>
             <h1>EL4D</h1>
             <div className="aka-container">
