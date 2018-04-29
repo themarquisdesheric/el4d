@@ -9,6 +9,7 @@ class NameChanger extends Component {
 
   componentDidMount() {
     window.setInterval(this.changeName, 1500);
+    this.node.classList.add('playing');
   }
 
   changeFont = (index) => {
@@ -43,6 +44,7 @@ class NameChanger extends Component {
 
     return (
       <span 
+        ref={node => this.node = node}
         className="name-changer" 
         style={{ 
           fontFamily,

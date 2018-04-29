@@ -27,10 +27,7 @@ figure {
 
   .tilt-child { min-width: 100vw; }
   
-  img { 
-    width: 80%;
-    background: radial-gradient(transparent 64%, blue 65%, transparent 73%);
-  }
+  img { width: 80%; }
 }
 
 h1,
@@ -65,14 +62,16 @@ h1 {
     text-align: left;
     margin-left: .5rem;
     font-size: 1.5rem;
-    opacity: 0;
-    animation: fade 1500ms infinite;
     text-shadow:
       -1px -1px 1px $blue,
       1px -1px 1px $blue,
       -1px 1px 1px $blue,
       1px 1px 1px $blue;
+    animation: fade 1500ms infinite paused; 
+
+    &.playing { animation-play-state: running; }
   }
+
 }
 
 @keyframes showAKA {
@@ -81,8 +80,10 @@ h1 {
 }
 
 @keyframes fade {
+  0% { opacity: 0; }
   20%,
   80% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 footer {
