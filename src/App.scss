@@ -14,6 +14,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 figure {
@@ -64,6 +65,7 @@ h1 {
     text-align: left;
     margin-left: .5rem;
     font-size: 1.5rem;
+    opacity: 0;
     animation: fade 1500ms infinite;
     text-shadow:
       -1px -1px 1px $blue,
@@ -79,16 +81,14 @@ h1 {
 }
 
 @keyframes fade {
-  0% { opacity: 0; }
   20%,
   80% { opacity: 1; }
-  100% { opacity: 0; }
 }
 
 footer {
   position: absolute;
   width: 100vw;
-  bottom: 0.5rem;
+  bottom: 0;
   
   a { 
    margin: 0 .2rem;
