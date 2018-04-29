@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NameChanger from './NameChanger';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +11,11 @@ class App extends Component {
 
           <figcaption>
             <h1>EL4D</h1>
-            <h2>AKA </h2>
+            <div>
+              AKA
+              <NameChanger />
+            </div>
+
           </figcaption>
         </figure>
         
