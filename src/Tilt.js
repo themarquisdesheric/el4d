@@ -10,7 +10,7 @@ class Tilt extends Component {
       max: 35,
       speed: 400,
       glare: false,
-      reset: false,
+      reset: true,
     });
   }
 
