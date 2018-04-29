@@ -11,8 +11,10 @@ class App extends Component {
 
           <figcaption>
             <h1>EL4D</h1>
-            <div>
-              AKA
+            <div className="aka-container">
+              <span className="aka">
+                AKA
+              </span>
               <NameChanger />
             </div>
 

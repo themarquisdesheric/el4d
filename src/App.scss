@@ -27,18 +27,28 @@ footer { font-weight: normal; }
 
 h1 { 
   font-size: 5.5rem;
+  text-shadow:
+    -1.5px -1.5px 0 #0569F5,
+    1.5px -1.5px 0 #0569F5,
+    -1.5px 1.5px 0 #0569F5,
+    1.5px 1.5px 0 #0569F5;
   margin: 1rem 0 .5rem;
 }
 
-h2 { margin: 0; }
+.aka-container {
+  display: flex;
+  justify-content: center;
 
-.name-changer {
-  display: inline-block;
-  min-width: 90px;
-  text-align: left;
-  margin-left: .5rem;
-  font-size: 1.5rem;
-  animation: fade 1500ms infinite;
+  .aka { align-self: center; }
+  
+  .name-changer {
+    display: inline-block;
+    min-width: 90px;
+    text-align: left;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    animation: fade 1500ms infinite;
+  }
 }
 
 @keyframes fade {
