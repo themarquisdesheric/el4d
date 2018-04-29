@@ -1,3 +1,5 @@
+$blue:  #0569F5;
+
 * { box-sizing: border-box }
 
 body {
@@ -21,7 +23,10 @@ figure {
 
   .tilt-child { min-width: 100vw; }
   
-  img { width: 80%; }
+  img { 
+    width: 80%;
+    background: radial-gradient(transparent 60%, blue 65%, transparent 73%);
+  }
 }
 
 h1,
@@ -31,10 +36,10 @@ footer { font-weight: normal; }
 h1 { 
   font-size: 7rem;
   text-shadow:
-    -2px -2px 2px #0569F5,
-    2px -2px 2px #0569F5,
-    -2px 2px 2px #0569F5,
-    2px 2px 2px #0569F5;
+    -2px -2px 2px $blue,
+    2px -2px 2px $blue,
+    -2px 2px 2px $blue,
+    2px 2px 2px $blue;
   margin: 1rem 0 .5rem;
 }
 
@@ -80,7 +85,7 @@ footer {
   span { 
    margin: 0 .2rem;
 
-   &:hover { color: #0569F5; }
+   &:hover { color: $blue; }
   }
 
   .cell::before { content: '📱'; }
