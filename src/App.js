@@ -13,7 +13,7 @@ class App extends Component {
             <h1>EL4D</h1>
             <div className="aka-container">
               <span className="aka">
-                AKA
+                AKA 
               </span>
               <NameChanger />
             </div>
