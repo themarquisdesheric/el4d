@@ -77,6 +77,10 @@ footer {
 
    &:hover { color: #0569F5; }
   }
+  
+  .cell::before { content: '📱'; }
+
+  .email::before { content: '💬'; }
 }
 
 @media (min-width: 400px) {

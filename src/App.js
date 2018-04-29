@@ -8,7 +8,6 @@ class App extends Component {
       <div className="app">
         <figure>
           <img src="el4d.png" alt="el4d music" />
-
           <figcaption>
             <h1>EL4D</h1>
             <div className="aka-container">
@@ -17,17 +16,15 @@ class App extends Component {
               </span>
               <NameChanger />
             </div>
-
           </figcaption>
         </figure>
         
         <footer>
-          For booking, call
-            <span>
+          for booking&nbsp;
+            <span className="cell">
               818.564.8318
-            </span> 
-            or e-mail 
-            <span>
+            </span>  
+            <span className="email">
               elad@mamnoon.com
             </span>
         </footer>
