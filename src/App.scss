@@ -3,6 +3,7 @@ $blue:  #0569F5;
 * { box-sizing: border-box }
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -11,11 +12,13 @@ body {
   text-align: center;
   color: whitesmoke;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 figure {
   margin: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +28,7 @@ figure {
   
   img { 
     width: 80%;
-    background: radial-gradient(transparent 60%, blue 65%, transparent 73%);
+    background: radial-gradient(transparent 64%, blue 65%, transparent 73%);
   }
 }
 
@@ -34,33 +37,33 @@ h2,
 footer { font-weight: normal; }
 
 h1 { 
-  font-size: 7rem;
+  font-size: 6rem;
   text-shadow:
     -2px -2px 2px $blue,
     2px -2px 2px $blue,
     -2px 2px 2px $blue,
     2px 2px 2px $blue;
-  margin: 1rem 0 .5rem;
+    margin: 0;
 }
 
 .aka-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 3rem;
+  min-height: 2rem;
 
   .aka { 
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: 0;
     animation: showAKA 400ms 750ms ease-out forwards;
   }
   
   .name-changer {
     display: inline-block;
-    min-width: 120px;
+    min-width: 95px;
     text-align: left;
     margin-left: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: fade 1500ms infinite;
     text-shadow:
       -1px -1px 1px $blue,
@@ -85,7 +88,7 @@ h1 {
 footer {
   position: absolute;
   width: 100vw;
-  bottom: .5rem;
+  bottom: 7.5vh;
   
   a { 
    margin: 0 .2rem;
@@ -111,6 +114,22 @@ footer {
 @media (min-width: 768px) {
   figure {
     img { width: 450px; }
+
+    h1 {
+      font-size: 7rem;
+      margin: 1rem 0 .5rem;
+    }
+
+    .aka-container {
+      min-height: 3rem;
+    
+      .aka { font-size: 1.5rem; }
+      
+      .name-changer {
+        min-width: 120px;
+        font-size: 2rem;
+      }
+    }
   }
 
   footer { bottom: 1rem; }
