@@ -32,10 +32,9 @@ class NameChanger extends Component {
     this.setState(prevState => ({
       name: names[index],
       fontFamily: changeFont(index),
-      index: 
-        (index === names.length - 1) 
-          ? 0 
-          : prevState.index + 1
+      index: (index === names.length - 1) 
+        ? 0 
+        : prevState.index + 1
     }));
   };
 
@@ -43,7 +42,13 @@ class NameChanger extends Component {
     const { name, fontFamily } = this.state;
 
     return (
-      <span className="name-changer" style={{ fontFamily }}>
+      <span 
+        className="name-changer" 
+        style={{ 
+          fontFamily,
+          transform: (name === 'el-40') ? 'translateY(.25rem)' : ''
+        }}
+      >
         {name}
       </span>
     );
