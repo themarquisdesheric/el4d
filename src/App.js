@@ -24,10 +24,12 @@ class App extends Component {
         
         <footer>
           for booking&nbsp;
-            <a href="tel:818-564-8318" className="cell">
+            <a href="tel:818-564-8318">
+              <span role="img" aria-label="cellphone">📱</span> 
               818.564.8318
             </a>  
-            <a href="mailto:elad@mamnoon.com" className="email">
+            <a href="mailto:elad@mamnoon.com">
+              <span role="img" aria-label="chat">💬</span> 
               elad@mamnoon.com
             </a>
         </footer>
