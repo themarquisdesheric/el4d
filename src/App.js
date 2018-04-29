@@ -24,12 +24,12 @@ class App extends Component {
         
         <footer>
           for booking&nbsp;
-            <span className="cell">
+            <a href="tel:818-564-8318" className="cell">
               818.564.8318
-            </span>  
-            <span className="email">
+            </a>  
+            <a href="mailto:elad@mamnoon.com" className="email">
               elad@mamnoon.com
-            </span>
+            </a>
         </footer>
       </div>
     );
