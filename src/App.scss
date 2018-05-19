@@ -28,6 +28,11 @@ figure {
   .tilt-child { min-width: 100vw; }
   
   img { width: 80%; }
+
+  figcaption { 
+    position: relative;
+    top: 1rem; 
+  }
 }
 
 h1,
@@ -111,6 +116,8 @@ footer {
 @media (min-width: 768px) {
   figure {
     img { width: 450px; }
+
+    figcaption { top: 0; }
 
     h1 {
       font-size: 7rem;
