@@ -4,12 +4,13 @@ class NameChanger extends Component {
   state = {
     name: null,
     fontFamily: null,
-    index: 0
+    index: 0,
+    playing: false
   };
 
   componentDidMount() {
     window.setInterval(this.changeName, 1500);
-    this.node.classList.add('playing');
+    this.setState({ playing: true });
   }
 
   changeFont = (index) => {
@@ -40,12 +41,11 @@ class NameChanger extends Component {
   };
 
   render() {
-    const { name, fontFamily } = this.state;
+    const { name, fontFamily, playing } = this.state;
 
     return (
-      <span 
-        ref={node => this.node = node}
-        className="name-changer" 
+      <span
+        className={`name-changer ${playing ? 'playing' : ''}`} 
         style={{ 
           fontFamily,
           transform: (name === 'el-40') ? 'translateY(.25rem)' : ''
