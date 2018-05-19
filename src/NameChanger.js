@@ -48,7 +48,8 @@ class NameChanger extends Component {
         className={`name-changer ${playing ? 'playing' : ''}`} 
         style={{ 
           fontFamily,
-          transform: (name === 'el-40') ? 'translateY(.25rem)' : ''
+          position: 'relative',
+          top: (name === 'el-40') ? '.25rem' : ''
         }}
       >
         {name}
