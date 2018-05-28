@@ -23,20 +23,23 @@ class App extends Component {
           </figcaption>
         </figure>
         <footer>
-          for booking 
+          <span>for booking </span>
             <a href="tel:818-564-8318">
               <span role="img" aria-label="cellphone"> 📱</span> 
-              818.564.8318
+              call
             </a>
-            <span className="middot-divider">&nbsp;&middot;&nbsp;</span>
             
             <a className="email" href="mailto:elad@mamnoonrestaurant.com">
-              💬 elad@mamnoonrestaurant.com
+              <span role="img" aria-label="email">💬 </span> 
+              email
+            </a>
+
+            <a className="soundcloud" href="https://soundcloud.com/el4d-1" targt="_blank">
+              <span role="img" aria-label="soundcloud">
+                <SoundCloudIcon /> listen
+              </span>
             </a>
         </footer>
-        <a className="soundcloud">
-          <SoundCloudIcon />
-        </a>
       </div>
     );
   }

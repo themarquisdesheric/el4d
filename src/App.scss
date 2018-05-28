@@ -87,18 +87,11 @@ h1 {
 
 .soundcloud {
   svg {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
   }
 }
-
-span.middot-divider {display: none; }
-
-.email { display: block; }
 
 @keyframes showAKA {
   20%,
@@ -116,7 +109,7 @@ footer {
   position: absolute;
   width: 100vw;
   bottom: 0;
-  
+
   a { margin: 0 .2rem; }
 }
 
@@ -151,16 +144,5 @@ footer {
     }
   }
 
-  footer { bottom: 1rem; }
-
-  .soundcloud {
-    svg {
-      width: 60px;
-      height: 60px;  
-    }
-  }
-
-  span.middot-divider {display: static; }
-
-  .email { display: inline; }
+  footer { bottom: 0rem; }
 }
