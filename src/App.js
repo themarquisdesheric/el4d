@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SoundCloudIcon from 'react-icons/lib/fa/soundcloud';
 import Tilt from './Tilt';
 import NameChanger from './NameChanger';
 import './App.css';
@@ -21,15 +22,22 @@ class App extends Component {
             </div>
           </figcaption>
         </figure>
-
         <footer>
-          for booking &nbsp;&middot;&nbsp;
+          <span>for booking </span>
             <a href="tel:818-564-8318">
-              818.564.8318
+              <span role="img" aria-label="cellphone"> 📱</span> 
+              call
             </a>
-            &nbsp;&middot;&nbsp;
-            <a href="mailto:elad@mamnoon.com">
-              elad@mamnoon.com
+            
+            <a className="email" href="mailto:elad@mamnoonrestaurant.com">
+              <span role="img" aria-label="email"> 💬</span> 
+              email
+            </a>
+
+            <a className="soundcloud" href="https://soundcloud.com/el4d-1" targt="_blank">
+              <span role="img" aria-label="soundcloud">
+                <SoundCloudIcon /> listen
+              </span>
             </a>
         </footer>
       </div>
