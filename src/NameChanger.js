@@ -9,7 +9,12 @@ class NameChanger extends Component {
   };
 
   componentDidMount() {
-    window.setInterval(this.changeName, 1500);
+    const { span, changeName } = this;
+
+    span.addEventListener('animationiteration', 
+      () => changeName()
+    );
+
     this.setState({ playing: true });
   }
 
@@ -46,6 +51,7 @@ class NameChanger extends Component {
     return (
       <span
         className={`name-changer ${playing ? 'playing' : ''}`} 
+        ref={span => this.span = span}
         style={{ 
           fontFamily,
           position: 'relative',

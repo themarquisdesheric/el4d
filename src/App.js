@@ -30,7 +30,7 @@ class App extends Component {
             </a>
             
             <a className="email" href="mailto:elad@mamnoonrestaurant.com">
-              <span role="img" aria-label="email">💬 </span> 
+              <span role="img" aria-label="email"> 💬</span> 
               email
             </a>
 
