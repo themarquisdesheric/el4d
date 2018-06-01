@@ -34,7 +34,7 @@ class App extends Component {
               email
             </a>
 
-            <a className="soundcloud" href="https://soundcloud.com/user-120924984" targt="_blank">
+            <a className="soundcloud" href="https://soundcloud.com/user-120924984" target="_blank">
               <span role="img" aria-label="soundcloud">
                 <SoundCloudIcon /> listen
               </span>
