@@ -29,12 +29,12 @@ class App extends Component {
               call
             </a>
             
-            <a className="email" href="mailto:elad@mamnoonrestaurant.com">
+            <a className="email" title="el4dizzle@el4d.com" href="mailto:el4dizzle@el4d.com">
               <span role="img" aria-label="email"> 💬</span> 
               email
             </a>
 
-            <a className="soundcloud" href="https://soundcloud.com/el4d-1" targt="_blank">
+            <a className="soundcloud" href="https://soundcloud.com/user-120924984" targt="_blank">
               <span role="img" aria-label="soundcloud">
                 <SoundCloudIcon /> listen
               </span>
