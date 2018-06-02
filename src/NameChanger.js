@@ -32,7 +32,7 @@ class NameChanger extends Component {
   };
 
   changeName = () => {
-    const names = ['ol lightsy', 'eladi-da', 'el-40'];
+    const names = ['ol lightsy', 'eladi-da', 'el-40', 'elautopilot'];
     const { index } = this.state;
     const { changeFont } = this;
     
