@@ -9,22 +9,21 @@ class NameChanger extends Component {
   };
 
   componentDidMount() {
-    const { span, changeName } = this;
-
-    span.addEventListener('animationiteration', 
-      () => changeName()
+    this.span.addEventListener(
+      'animationiteration', 
+      () => this.changeName()
     );
 
     this.setState({ playing: true });
   }
 
-  changeFont = (index) => {
-    switch (index) {
-      case 0:
+  changeFont = (name) => {
+    switch (name) {
+      case 'ol lightsy':
         return 'Sedgwick Ave Display';
-      case 1:
-        return 'Bangers';
-      case 2:
+      case 'el-40':
+      case '4d':
+      case 'e-lad':
         return 'Luckiest Guy';
       default:
         return 'Bangers';
@@ -32,13 +31,13 @@ class NameChanger extends Component {
   };
 
   changeName = () => {
-    const names = ['ol lightsy', 'eladi-da', 'el-40', 'elautopilot'];
+    const names = ['ol lightsy', 'eladi-da', 'el-40', 'elautopilot', '4d', 'eladio', 'e-lad'];
     const { index } = this.state;
-    const { changeFont } = this;
+    const name = names[index];
     
     this.setState(prevState => ({
-      name: names[index],
-      fontFamily: changeFont(index),
+      name,
+      fontFamily: this.changeFont(name),
       index: (index === names.length - 1) 
         ? 0 
         : prevState.index + 1
@@ -47,16 +46,18 @@ class NameChanger extends Component {
 
   render() {
     const { name, fontFamily, playing } = this.state;
+    const styles = { 
+      fontFamily,
+      top: (name === 'el-40' || name === '4d' || name === 'e-lad') 
+        ? '.25rem' 
+        : ''
+    };
 
     return (
       <span
         className={`name-changer ${playing ? 'playing' : ''}`} 
         ref={span => this.span = span}
-        style={{ 
-          fontFamily,
-          position: 'relative',
-          top: (name === 'el-40') ? '.25rem' : ''
-        }}
+        style={styles}
       >
         {name}
       </span>

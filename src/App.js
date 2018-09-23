@@ -26,7 +26,7 @@ class App extends Component {
           <span>for booking </span>
             <a href="tel:818-564-8318">
               <span role="img" aria-label="cellphone"> 📱</span> 
-              call
+              telephone
             </a>
             
             <a className="email" title="el4dizzle@el4d.com" href="mailto:el4dizzle@el4d.com">
@@ -34,7 +34,7 @@ class App extends Component {
               email
             </a>
 
-            <a className="soundcloud" href="https://soundcloud.com/user-120924984" target="_blank" rel="noopener noreferrer">
+            <a className="soundcloud" href="https://soundcloud.com/el4dizzle" target="_blank" rel="noopener noreferrer">
               <span role="img" aria-label="soundcloud">
                 <SoundCloudIcon /> listen
               </span>
