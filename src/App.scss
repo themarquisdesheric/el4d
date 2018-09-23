@@ -153,3 +153,9 @@ footer {
 
   footer { bottom: 0rem; }
 }
+
+@media (width: 800px) and (height: 600px) {
+  figure img {
+    width: 320px;
+  }
+}
