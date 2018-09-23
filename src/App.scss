@@ -74,7 +74,8 @@ h1 {
   
   .name-changer {
     display: inline-block;
-    min-width: 95px;
+    position: relative;
+    min-width: 100px;
     text-align: left;
     margin-left: .5rem;
     font-size: 1.5rem;
@@ -137,8 +138,10 @@ footer {
     }
 
     .aka-container {
+      justify-content: flex-start;
       min-height: 3rem;
-    
+      width: 180px;
+      
       .aka { font-size: 1.5rem; }
       
       .name-changer {
