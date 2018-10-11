@@ -11,7 +11,7 @@ class NameChanger extends Component {
   componentDidMount() {
     this.span.addEventListener(
       'animationiteration', 
-      () => this.changeName()
+      this.changeName
     );
 
     this.setState({ playing: true });
@@ -31,8 +31,8 @@ class NameChanger extends Component {
   };
 
   changeName = () => {
-    const names = ['ol lightsy', 'eladi-da', 'el-40', 'elautopilot', '4d', 'eladio', 'e-lad'];
     const { index } = this.state;
+    const names = ['ol lightsy', 'eladi-da', 'el-40', 'elautopilot', '4d', 'eladio', 'e-lad'];
     const name = names[index];
     
     this.setState(prevState => ({
@@ -46,6 +46,7 @@ class NameChanger extends Component {
 
   render() {
     const { name, fontFamily, playing } = this.state;
+
     const styles = { 
       fontFamily,
       top: (name === 'el-40' || name === '4d' || name === 'e-lad') 
