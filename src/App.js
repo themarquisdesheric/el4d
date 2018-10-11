@@ -29,7 +29,7 @@ class App extends Component {
               telephone
             </a>
             
-            <a className="email" title="el4dizzle@el4d.com" href="mailto:el4dizzle@el4d.com">
+            <a className="email" title="EL4D.music@gmail.com" href="mailto:EL4D.music@gmail.com">
               <span role="img" aria-label="email"> 💬</span> 
               email
             </a>
