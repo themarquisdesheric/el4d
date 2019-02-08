@@ -17,6 +17,13 @@ body {
   position: relative;
 }
 
+iframe {
+  width: 90%;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+
 a {
   color: whitesmoke;
   text-decoration: none;
@@ -57,7 +64,7 @@ h1 {
     2px -2px 2px $blue,
     -2px 2px 2px $blue,
     2px 2px 2px $blue;
-    margin: 0;
+  margin: 0;
 }
 
 .aka-container {
@@ -87,14 +94,6 @@ h1 {
     animation: fade 1500ms infinite paused; 
 
     &.playing { animation-play-state: running; }
-  }
-}
-
-.soundcloud {
-  svg {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
   }
 }
 
